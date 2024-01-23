@@ -1,0 +1,35 @@
+@font-face {
+    /* font-family: Wilden;
+    src: url(wilden-9076908/Wilden.otf); */
+    font-family: Fisherman;
+    src: url(Fisherman-font_Nurrehmet-Studio_110421/Fisherman-Regular.otf);
+  }
+
+h1 {
+    font-family: 
+    
+}
+
+navbar-brand {
+    font-family: Wilden;
+    font-size: 30px;
+
+}
+
+
+body {
+    background-color: rgb(253, 244, 232);
+    overflow-y: auto; /* Only show the scrollbar when needed */
+}
+
+/* Hero Section */
+
+.img-zoom {
+    transition: transform 0.3s ease-in-out; /* Smooth transition for zoom effect */
+}
+
+.img-zoom:hover {
+    transform: scale(1.2); /* Scale up image on hover */
+}
+
+
