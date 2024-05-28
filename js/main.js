@@ -36,8 +36,8 @@ document.addEventListener("DOMContentLoaded", function () {
   content.classList.add("animate");
   var content2 = document.querySelector(".content2");
   content2.classList.add("animate");
-  var content = document.querySelector(".float");
-  content.classList.add("animate");
+  // var content = document.querySelector(".float");
+  // content.classList.add("animate");
 });
 
 const observer = new IntersectionObserver((entries) => {

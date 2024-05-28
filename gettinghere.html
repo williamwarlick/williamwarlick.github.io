@@ -8,6 +8,14 @@
     <link href="css/main.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body style="width: 100%;">
@@ -17,21 +25,72 @@
         <i class="fas fa-arrow-up show"></i>
     </button>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg custom-navbar" style="background-color: #0a4020;">
-        <div class="container-fluid d-flex justify-content-evenly">
 
 
-            <div class="navbar-brand d-flex justify-content-center align-items-center">
-                <!-- <img src="photos/MaineGuide.png" style="height:60px;"> -->
-                <!-- <img src="photos/DALL·E 2024-01-22 14.52.32 - Create a relaxing and tranquil logo for a fishing company located on Sebago Lake in Maine. The design should feature elements of freshwater fishing, s.png" alt="Logo" class="ms-5 rounded-circle img-zoom" style="height: 3rem;"> -->
-                <h2 class="ms-2 mt-1 display-5 " style="color: #ffffff;"><a href="index.html"
-                        class="link-underline link-underline-opacity-0">
 
-                        Sebago Sport Fishing<span class="d-none d-lg-inline">
-                            & Guiding</span></a></h2>
+    <!-- 
+    <div class="banner bg-light  d-none d-lg-block">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 d-flex align-items-center justify-content-center ">
+                    <i class="fas fa-envelope me-2"></i>
+                    <p class="mb-0">Glen@SebagoSportFishing.com</p>
+                </div>
+                <div class="col-md-4 text-center pt-3">
+                    <h4 class="mb-0 fw-bold text-primary ms-4">Bookings are open! Call now!</p>
+                </div>
+                <div class="col-md-4 d-flex align-items-center justify-content-center ">
+                    <i class="fas fa-phone-alt me-2"></i>
+                    <p class="mb-0">(207) 329-250</p>
+                </div>
             </div>
+        </div>
 
+
+    </div> -->
+
+
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg custom-navbar d-none d-lg-flex pt-2" style="background-color: #213E73;">
+        <div class="container-fluid d-flex justify-content-center">
+            <div class="row w-100">
+                <div class="col-4 d-flex justify-content-end align-items-center">
+                    <div class="left-links-container">
+                        <ul class="navbar-nav text-center left-links">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="gettinghere.html">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pricing.html">Trips & Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="policies.html">Visiting Sebago</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-4 d-flex justify-content-center">
+                    <div class="navbar-brand me-0">
+                        <img src="photos/vectors:imgs/sebago_logo_no_text.png" class="img-fluid" style="height: 150px;">
+                    </div>
+                </div>
+                <div class="col-4 d-flex justify-content-start align-items-center">
+                    <div class="right-links-container ">
+                        <ul class="navbar-nav text-center right-links">
+                            <li class="nav-item">
+                                <a class="nav-link" href="gear.html">The Boats</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="tripdetails.html">FAQ's</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pricing.html">Captain Glen</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
             <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -39,25 +98,41 @@
                 <span class="toggler-icon middle-bar"></span>
                 <span class="toggler-icon bottom-bar"></span>
             </button>
+        </div>
+    </nav>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="flex-grow: 0;">
-                <ul class="navbar-nav text-center">
+    <!-- Mobile Navbar -->
+    <nav class="navbar navbar-expand-lg custom-navbar d-lg-none">
+        <div class="container-fluid">
+            <div class="navbar-brand mx-auto">
+                <img src="photos/vectors:imgs/sebago_logo_no_text.png" class="img-fluid" style="height: 100px;">
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="gettinghere.html">Getting Here</a>
+                        <a class="nav-link" aria-current="page" href="gettinghere.html">Contact</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="pricing.html">Trips & Pricing</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="gear.html">Boats & Equipment</a>
+                        <a class="nav-link" href="policies.html">Visiting Sebago</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="pricing.html">FAQs</a>
+                        <a class="nav-link" href="gear.html">The Boats</a>
                     </li>
                     <li class="nav-item">
-                        <a href="booknow.html" class="btn btn-primary  btn-rounded w-100 text-nowrap navlink"
-                            style="color: #ffffff;">Book
-                            Now</a>
+                        <a class="nav-link" href="tripdetails.html">FAQ's</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">Captain Glen</a>
                     </li>
                 </ul>
             </div>
@@ -65,11 +140,13 @@
     </nav>
 
 
+
     <div class="container my-4">
         <h2 class="text-center">Getting Here</h2>
         <div class="row d-flex justify-content-center">
             <div class="col-md-7 mb-4">
-                <p>Sebago Lake is easily accessible from Portland, reach Sebago Lake by following these directions:</p>
+                <p>Sebago Lake is easily accessible from Portland, reach Sebago Lake by following these directions:
+                </p>
                 <h3>From Portland:</h3>
                 <ol>
                     <li>Head northwest on I-295 N/US-1 N.</li>
@@ -97,7 +174,70 @@
     <div class="water-background p-5">
         <div class="container">
             <h2 class="text-center">Lodging and Dining</h2>
-            <p class="text-center">Your reccomendations here</p>
+            <p>Local dining, places to stay and things to do
+                If you are visiting Maine there are a few things I recommend doing while you're in town...The Maine
+                Wildlife Park is
+                about 20 minutes away from the marina and I highly recommend spending some time there, especially if
+                you have kids.
+                North Conway New Hampshire is about an hour away, it is a very scenic town with a lot of unique
+                shops and inns, while
+                you're there take a drive up Mount Washington and enjoy a spectacular 360 degree view of New
+                England, the highest
+                windspeed ever recorded on planet earth was on Mount Washington.
+                The Casco Bay Lines mail boat cruise is very popular and a great way to see the islands and scenery
+                of Casco Bay and
+                Portland from the ocean and when you get back you can take walk down
+                Commercial Street and get a look at a real-life working waterfront or stroll through the Old port
+                and check out some of
+                the small restaurants, bars, breweries and unique gift shops and maybe finish out the day with a
+                concert or show at
+                Merril Auditorium.
+                Maine has the most lighthouses of any state on the east coast with 65, planning a trip along the
+                coast to see some of
+                them is a great way to experience the Maine coast from New Hampshire to Canada.
+                Portland Headlight is the most photographed lighthouse in America and for good reason, next to
+                Portland Headlight is
+                Fort Williams Park which has some stunning ocean views, beautiful walking and some historic
+                structures.
+                Freeport is the home of LL Beans and about a 45-minute drive, also home to some great restaurants,
+                gift shops and one of
+                the best oyster bars in Maine, the Freeport Oyster Bar.
+                A bit further up the coast is Acadia National Park, it is one of the most beautiful places in the
+                world and if you make
+                arrangements to go up Cadillac Mountain, you'll get to see the sun rise before anyone else in the
+                United States.
+                Another great way to spend a day is to hop on the Downeaster high speed train in Portland or
+                Freeport and take a spin
+                down to Boston and visit The Science Museum, Boston Aquarium, The Freedom Trail, Boston Market and
+                dozens of other
+                attractions.</p>
+
+            <h2>Local Eateries</h2>
+            <p>
+                During the summer there many great places to eat in the Sebago region, these are some local eateries
+                that I recommend,
+                there are afew ore as you get away from the lake and I can recommend them depending on your travel
+                plans.
+                Kelly's Sebago Diner, Chutes and Top of The Hill Grill are my favorites for breakfast and lunch.
+                For dinner you can't go wrong with any of these.....
+                Rustlers,
+                The Stockhouse,
+                Rose's Italian Restaurant,
+                Bobs Seafood,
+                The Fishermans Catch, Yolked Farm to Table,
+                Captain Jacks,
+                The Freedom Café,
+                The Sportsman Kitchen and Keg in Standish has a dock and you can get there by boat
+                The Beacon is a great local Pizza and sandwich shop.
+                The good Life Market is a wonderful little store with a little bit of everything including a great
+                craft beer and wine
+                selection and very close to the marina.
+                The Village Kitchen is also close to the Marina and open very early for donuts,
+                breakfast sandwiches and coffee.
+                For the sweet tooth, The Mosquito Icecream stand is across the street from the marina and The
+                Icecream Dugout is down
+                the road a mile or so
+            </p>
         </div>
 
     </div>
@@ -105,48 +245,40 @@
 
 
 
-
-    <!-- Call To Action 1 - Bootstrap Brain Component -->
+    <!-- Call To Action -->
     <section
-        style="background-image: url('20220713_083144.jpg'); width: 100%; background-size: cover; background-position-y: 43%;">
-        <div style="background: rgba(0, 0, 0, 0.5);"">
+        style="background-image: url('./photos/glen_photos/20220713_083144.jpg'); width: 100%; background-size: cover; background-position-y: 43%;">
+        <div style="background: rgba(0, 0, 0, 0.5);">
 
-       
-        <div class=" container py-5">
-            <div class="text-center">
-                <h3 class="display-5 text-white mb-3 text-shadow-1">Join us for a memorable adventure on the waters of
-                    Maine</h3>
-                <a href="booknow.html" class="btn bsb-btn-2xl btn-primary rounded mb-3 text-nowrap text-white">Book
-                    Now</a>
+
+            <div class=" container py-5">
+                <div class="text-center">
+                    <h3 class="display-5 text-white mb-3 text-shadow-1">Join us for a memorable adventure on the
+                        waters
+                        of
+                        Maine</h3>
+                    <a href="booknow.html" class="btn bsb-btn-2xl btn-primary rounded mb-3 text-nowrap text-white">Book
+                        Now</a>
+                </div>
+
             </div>
-
-        </div>
         </div>
     </section>
 
-    <!-- Footer -->
 
-    <!-- <footer class="py-4" style="background-color: #0a4020;">
-        <div class="border-bottom mx-4">
 
-        </div>
-        <h2 class="ms-2 mt-1 display-6 text-center" style="color: #ffffff;"> &copy; Sebago Sport Fishing<span
-                class="d-none d-lg-inline">
-                & Guiding</span></h2>
-    </footer> -->
+    <!-- Footer  -->
+    <footer class="footer" style="background-color: #213E73; color: white">
 
-    <!-- Footer 2 - Bootstrap Brain Component -->
-    <footer class="footer" style="background-color: #0a4020; color: white">
-
-        <!-- Widgets - Bootstrap Brain Component -->
+        <!-- Widgets -->
         <section>
-            <div class="container overflow-hidden" style="background-color: #0a4020;">
-                <div class="row justify-content-xl-between border-top border-light-subtle my-4 pt-3">
+            <div class="container overflow-hidden" style="background-color: #213E73;">
+                <div class="row justify-content-xl-between border-bottom border-light-subtle my-4">
                     <div class="col-12 col-md-6 col-lg-5 col-xl-4">
-                        <div class="widget">
+                        <div class="widget align-items-center">
                             <a href="#!">
-                                <img src="svg/Outdoor Adventure & Fishing Logo (500 x 250 px) (4).png"
-                                    alt="BootstrapBrain Logo" class="img-fluid">
+                                <img src="./photos/vectors:imgs/Sebago_nav_logo.png" alt="BootstrapBrain Logo"
+                                    class="img-fluid" style="margin-top: -50px;">
                             </a>
                         </div>
                     </div>
@@ -155,11 +287,11 @@
                             <h4 class="widget-title mb-4 text-white">Get in Touch</h4>
                             <address class="mb-4">7 Main Street, Raymond, Maine 04071, United States</address>
                             <p class="mb-1">
-                                <a class="link-secondary text-decoration-none" href="tel:+15057922430">(207)
+                                <a class="text-white text-decoration-none" href="tel:+15057922430">(207)
                                     329-2505</a>
                             </p>
                             <p class="mb-0">
-                                <a class="link-secondary text-decoration-none"
+                                <a class="text-white text-decoration-none"
                                     href="mailto:demo@yourdomain.com">Glen@SebagoSportFishing.com</a>
                             </p>
                         </div>
@@ -169,22 +301,22 @@
                             <h4 class="widget-title mb-4 text-white">Learn More</h4>
                             <ul class="list-unstyled">
                                 <li class="mb-2">
-                                    <a href="index.html" class="link-secondary text-decoration-none">Home</a>
+                                    <a href="index.html" class="text-white text-decoration-none">Home</a>
                                 </li>
                                 <li class="mb-2">
-                                    <a href="pricing.html" class="link-secondary text-decoration-none">Trips &
+                                    <a href="pricing.html" class="text-white text-decoration-none">Trips &
                                         Pricing</a>
                                 </li>
                                 <li class="mb-2">
-                                    <a href="gear.html" class="link-secondary text-decoration-none">Boats &
+                                    <a href="gear.html" class="text-white text-decoration-none">Boats &
                                         Equipment</a>
                                 </li>
                                 <li class="mb-2">
-                                    <a href="booknow.html" class="link-secondary text-decoration-none">Book Now</a>
+                                    <a href="booknow.html" class="text-white text-decoration-none">Book
+                                        Now</a>
                                 </li>
                                 <li class="mb-0">
-                                    <a href="booknow.html#policies"
-                                        class="link-secondary text-decoration-none">Policies</a>
+                                    <a href="booknow.html#policies" class="text-white text-decoration-none">Policies</a>
                                 </li>
                             </ul>
                         </div>
@@ -195,13 +327,8 @@
                     &copy; 2024. All Rights Reserved.
                 </div>
             </div>
-            <!-- <div class="credits text-secondary text-center text-md-start mt-2 fs-7">
-                    Built by <a href="" class="link-secondary text-decoration-none">William Warlick</a>
-                    with
-                    <span class="text-primary">&#9829;</span>
-                </div> -->
-        </section>
 
+        </section>
 
 
         </div>
@@ -212,29 +339,14 @@
 
 </body>
 
-<!-- <div class="container">
-        <div class="d-flex justify-content-center">
-
-
-            <div class="col-md-4">
-                <iframe width="450" height="450" style="border:0" loading="lazy" allowfullscreen
-                    src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJDT8g83L0skwRXi-B-nG_ewQ&key=AIzaSyDge5a7vJUNsb44LlvD0DfOhEH41uLZT0o"></iframe>
-            </div>
-            <div class="col-md-4">
-                Checking
-            </div>
-        </div>
-
-    </div> -->
-
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-<script src="main.js"></script>
+
+<script src="js/main.js"></script>
 </body>
 
 </html>
